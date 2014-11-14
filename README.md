@@ -69,6 +69,7 @@ screen_results.csv : used in ‘EveActivity.r’ to provide a further results fi
  
 ----------------------------------------------------------------------------------------------------------------
 MLConfRules_20.r 
+----------------------------------------------------------------------------------------------------------------
 MLConfRules_40.r
 ----------------------------------------------------------------------------------------------------------------
 The ‘activity_results_output.csv’ and ‘indexed_compounds.csv’ outputs from ‘ConfResultsSorter.r’  and ‘EveActivity.r’ are combined to create weighted lists of the activity of the cherry-picked compounds (suffixes ‘_20’ and ‘_40’ refer to the total number of concentration levels/iterations for each compound):
@@ -81,6 +82,7 @@ venus_sorted.csv : ranks all the venus activity results after splitting them int
 
 ----------------------------------------------------------------------------------------------------------------
 110420_cherrypick_graphs.r (40 data points)
+----------------------------------------------------------------------------------------------------------------
 110605_cherrypick_graphs.r (20 data points)
 ----------------------------------------------------------------------------------------------------------------
 Graphs for each cherry-picked compound are generated using ‘CS_xxx.csv’ renamed as ‘compounds.csv’.  Again, two versions are available depending on whether the cherry-pick/confirmation screen has 20 or 40 data points per compound,  Three different plot formats (pdf, bmp, and png) are produced for each compound identifier, together with the negative control statistics for the confirmation screen.
@@ -97,6 +99,7 @@ Code used in Active Learning loops
 ==================================
 ----------------------------------------------------------------------------------------------------------------
 smiles.r 
+----------------------------------------------------------------------------------------------------------------
 smiles_loop.r
 ----------------------------------------------------------------------------------------------------------------
 
@@ -140,6 +143,7 @@ java -jar fingerprintconverter.jar AllSMILES.fpt AllSMILES_fptmatrix.ascii
 
 ----------------------------------------------------------------------------------------------------------------
 SMILES_bin_matrix.m 
+----------------------------------------------------------------------------------------------------------------
 SMILES_bin_matrix_loop.m 
 ----------------------------------------------------------------------------------------------------------------
 ascii coded SMILES fingerprints are converted into binary format for use in the octave script.
@@ -150,6 +154,7 @@ Output file: AllSMILES_fptmatrix.bin (or AllSMILES_fptmatrix_loop.bin) and compo
 
 ----------------------------------------------------------------------------------------------------------------
 multiSelOpt.m 
+----------------------------------------------------------------------------------------------------------------
 multiSelOptToFile.m 
 ----------------------------------------------------------------------------------------------------------------
 These programs hold the active k-optimisation AL selection process.  They create a list of compound index ids, and save this list as a .csv file.
@@ -170,6 +175,7 @@ Output files: chosenlist.csv, chosenpreds.csv
 
 ----------------------------------------------------------------------------------------------------------------
 new_compounds.r
+----------------------------------------------------------------------------------------------------------------
 new_compounds_loop.r
 ----------------------------------------------------------------------------------------------------------------
 Generation of lists for Eve to test next; final stage of an AL data processing loop.  All input & output files for the AL loops have the _loop suffix.
