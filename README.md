@@ -16,13 +16,21 @@ EveActivity.r
 ----------------------------------------------------------------------------------------------------------------
 Robot Eve runs a mass screen and produces the data file ‘MS_xxxx.csv’; this file is renamed as ‘screen_results.csv’ prior to processing.
 ‘EveActivity.r’ takes ‘screen_results.csv’ and provides several output files:
+
 negctrl_stats.csv : records the statistical analysis of the negative control wells
+
 screen_index.csv : used in Active Learning loop in ‘smiles.r’
+
 measurements_sapphire.mat : used in AL loop in multiSelOpt.m
+
 measurements_venus.mat : used in AL loop in multiSelOpt.m
+
 original_measurements_sapphire.csv : used in external data processing
+
 original_measurements_venus.csv : used in external data processing
+
 activity_results_output.csv : processed by ‘1805MLScreenRules.r’ to provide cherry-pick candidates for a confirmation screen.
+
 ‘EveActivity.r’ is also used to identify compound activity in the cherry-pick and confirmation screens.
 
 ----------------------------------------------------------------------------------------------------------------
