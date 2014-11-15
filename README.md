@@ -8,6 +8,13 @@ All of the code below performs operations based on Eve’s output data files:
 	‘MS_xxxx.csv’ for a mass screen
 	‘CS_xxxx.csv’ for a cherry-pick/confirmation screen
 
+Active Learning loops
+=====================
+----------------------------------------------------------------------------------------------------------------
+cherrypick.sh
+----------------------------------------------------------------------------------------------------------------
+The Active Learning loops are carried out using a shellscript such as cherrypick.sh; this uses various pieces of code as described below, whilst taking only raw data from Robot Eve in the form ‘MS_xxxx.csv’ and ‘CS_xxxx.csv’.  The shellscript provides a list of the next set of candidates to test.
+
 
 Analysis of mass screen data
 ============================
